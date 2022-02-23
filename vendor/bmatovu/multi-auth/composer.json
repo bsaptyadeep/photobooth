@@ -1,0 +1,52 @@
+{
+    "name": "bmatovu/multi-auth",
+    "description": "Laravel Multi Authentication",
+    "homepage": "https://github.com/mtvbrianking/multi-auth",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "package",
+        "multi",
+        "authentication"
+    ],
+    "authors": [
+        {
+            "name": "Brian Matovu",
+            "email": "mtvbrianking@gmail.com",
+            "homepage": "http://bmatovu.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2.5",
+        "illuminate/auth": "^7.0",
+        "illuminate/console": "^7.0",
+        "illuminate/notifications": "^7.0",
+        "illuminate/routing": "^7.0",
+        "illuminate/support": "^7.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.0",
+        "phpunit/phpunit": "^8.4|^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bmatovu\\MultiAuth\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bmatovu\\MultiAuth\\Test\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bmatovu\\MultiAuth\\MultiAuthServiceProvider"
+            ]
+        }
+    }
+}
